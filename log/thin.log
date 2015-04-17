@@ -1,0 +1,100 @@
+Writing PID to tmp/pids/thin.pid
+Thin web server (v1.6.3 codename Protein Powder)
+Maximum connections set to 1024
+Listening on 0.0.0.0:1234, CTRL+C to stop
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:09:39] "GET / HTTP/1.1" 302 - 0.0181
+10.0.2.2 - - [06/Apr/2015 09:09:39] "GET /beachbody HTTP/1.1" 200 2343 0.0380
+10.0.2.2 - - [06/Apr/2015 09:09:41] "GET /views/nagiosxi.html HTTP/1.1" 200 466 0.0783
+10.0.2.2 - - [06/Apr/2015 09:09:42] "GET /views/text.html HTTP/1.1" 200 175 0.0523
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:11:11] "GET /events HTTP/1.1" 200 - 89.9619
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:12:15] "GET /events HTTP/1.1" 200 - 60.5251
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:13:18] "GET /events HTTP/1.1" 200 - 59.9737
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:14:22] "GET /events HTTP/1.1" 200 - 59.9717
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:15:55] "GET /events HTTP/1.1" 200 - 89.9573
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:16:58] "GET /events HTTP/1.1" 200 - 59.9723
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:18:02] "GET /events HTTP/1.1" 200 - 59.9708
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:19:05] "GET /events HTTP/1.1" 200 - 59.9733
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:20:08] "GET /events HTTP/1.1" 200 - 59.9717
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:21:11] "GET /events HTTP/1.1" 200 - 59.9737
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:22:15] "GET /events HTTP/1.1" 200 - 59.9729
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:23:18] "GET /events HTTP/1.1" 200 - 59.9721
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+"teambeachbody.com===green"
+10.0.2.2 - - [06/Apr/2015 09:24:21] "GET /events HTTP/1.1" 200 - 59.9704
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:25:55] "GET /events HTTP/1.1" 200 - 89.9671
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:26:58] "GET /events HTTP/1.1" 200 - 59.9724
+"teambeachbody.com===green"
+"teambeachbody cluster====green"
+"teambeachbody splunk====green====green"
+"teamBeachBodyURLFlag : green"
+10.0.2.2 - - [06/Apr/2015 09:27:44] "GET /events HTTP/1.1" 200 - 42.6307
