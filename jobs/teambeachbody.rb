@@ -39,7 +39,7 @@ SCHEDULER.every '600s', :first_in => '0s' do
 
 	teamBeachBodyURLFlag = RuleBinding.set_flag(@host_flag, @conn_flag, @service_flag_1, @service_flag_2, @mem_serv_flag)
 
-	p "teamBeachBodyURLFlag : #{teamBeachBodyURLFlag}"
+	p "teamBeachBodyURLFlag----------: #{teamBeachBodyURLFlag}"
 
   send_event('teambeachbody_status' , { flag: teamBeachBodyURLFlag } )
 
