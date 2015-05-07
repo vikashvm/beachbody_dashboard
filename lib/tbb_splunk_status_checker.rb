@@ -21,11 +21,11 @@ module ParseResponse
 end
 
 module TBBStatusChecker
-  URL = 'https://172.20.241.64:8089'
+  URL = SETTINGS['url']
 
   def self.connnection
-    conn = Faraday.new url: URL, ssl: {verify: false} 
-    conn.basic_auth 'admin', 'bbody@3301'
+    conn = Faraday.new url: URL, ssl: {verify: false}
+    conn.basic_auth SETTINGS['username'], SETTINGS['password']
     conn
   end
 

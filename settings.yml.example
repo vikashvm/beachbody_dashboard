@@ -1,0 +1,4 @@
+#set values with correct ones and rename file as settings.yml
+url: 'https://xxx.xx.xxx.xxx:xxxx'
+username: 'user'
+password: 'password'
