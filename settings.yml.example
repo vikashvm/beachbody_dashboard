@@ -2,3 +2,4 @@
 url: 'https://xxx.xx.xxx.xxx:xxxx'
 username: 'user'
 password: 'password'
+splunk_api_url: '/a/b/c/jobs/export'

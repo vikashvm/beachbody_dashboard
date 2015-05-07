@@ -29,7 +29,8 @@ module TBBStatusChecker
     conn
   end
 
-  def self.request(url, search)
+  def self.request(search)
+    url = SETTINGS['splunk_api_url']
     connnection.post url, {search: search, output_mode: 'json'}
   end
 end
