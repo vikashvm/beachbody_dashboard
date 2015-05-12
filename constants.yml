@@ -26,11 +26,12 @@ shakelogy_host_2: "faq.shakeology.com"
 shakelogy_services_1: ["HTTP", "DNS Resolution", "Web Page Content", "SSL Certificate"]
 
 #Oracle ESB
-oracle_esb_host_1: "ebsapp01.prd.dc2.beachbody.com"
-oracle_esb_host_2: "ebsapp02.prd.dc2.beachbody.com"
-oracle_esb_host_3: "ebsdba01.prd.dc2.beachbody.com"
-oracle_esb_host_4: "ebsdba02.prd.dc2.beachbody.com"
-oracle_esb_services_1: ["/ Disk Usage", "CPU Usage", "Memory Usage", "Swap Usage"]
+oracle_ebs_services_1: ["/ Disk Usage", "CPU Usage", "Memory Usage", "Swap Usage"]
+oracle_ebs_hosts:
+  - "ebsapp01.prd.dc2.beachbody.com"
+  - "ebsapp02.prd.dc2.beachbody.com"
+  - "ebsdba01.prd.dc2.beachbody.com"
+  - "ebsdba02.prd.dc2.beachbody.com"
 
 
 #MarketLive
