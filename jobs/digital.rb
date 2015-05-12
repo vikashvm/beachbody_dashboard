@@ -235,6 +235,25 @@ SCHEDULER.every CONFIG['interval'], :first_in => CONFIG['start_time'] do
 		flags << NagiosStatusChecker.check_status(services, req_services)
 	end
 
+	#Splunk Apis
+	threads << Thread.new do
+    search_param = "search index=tbb sourcetype=tbb_server does not match any name from EnrollmentUtil.ClubTrialTypeEnum | head 1"
+		response1 = TBBStatusChecker.request search_param
+		flags << ParseResponse.parse(response1)
+	end
+
+	threads << Thread.new do
+    search_param = "search index=tbb sourcetype=tbb_server Could not get the productSkuPriceMetaSignupTypeList with id | head 1"
+		response1 = TBBStatusChecker.request search_param
+		flags << ParseResponse.parse(response1)
+	end
+
+	threads << Thread.new do
+    search_param = "search index=tbb sourcetype=tbb_server Could not get the skuMeta with id | head 1"
+		response1 = TBBStatusChecker.request search_param
+		flags << ParseResponse.parse(response1)
+	end
+
 
 	threads.map(&:join)
 
