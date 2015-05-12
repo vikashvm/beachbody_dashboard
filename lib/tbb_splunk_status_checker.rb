@@ -1,12 +1,19 @@
 require 'faraday'
 require 'json'
 require 'time'
+require_relative 'constants'
 
 module ParseResponse
-  def self.parse(response, interval = 60)
+  def self.parse(response, interval = CONFIG['interval'])
+    #interval is in format of '60s' or '10m' or '2d'
+    unit = interval[-1]
+    time = interval[0...-1].to_i
+    time *= 60 if unit == 'm'
+    time *= 3600 if unit == 'h'
+    time *= 86400 if unit == 'd'
     res_body = JSON.parse(response.body)
     return "green" unless result = res_body["result"]
-    date_checker(result, interval)
+    date_checker(result, time)
   end
 
   def self.date_checker(result, interval)

@@ -1,6 +1,3 @@
-require_relative '../lib/nagios_status_checker'
-require_relative '../lib/rule_binding'
-
 SCHEDULER.every CONFIG['interval'], :first_in => CONFIG['start_time'] do
 
 	forumsFlag = "green"
