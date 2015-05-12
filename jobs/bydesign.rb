@@ -17,60 +17,11 @@ SCHEDULER.every CONFIG['interval'], :first_in => CONFIG['start_time'] do
 	end
 
 	#Splunk Apis - Internal Processing
-	threads << Thread.new do
-    search_param = "search index=tbb sourcetype=tbb_http soap:Fault | head 1"
-		response1 = TBBStatusChecker.request search_param
-		flags << ParseResponse.parse(response1)
-	end
-
-	threads << Thread.new do
-    search_param = "search index=tbb sourcetype=tbb_http 'SqlClient' | head 1"
-		response1 = TBBStatusChecker.request search_param
-		flags << ParseResponse.parse(response1)
-	end
-
-	threads << Thread.new do
-    search_param = "search Error in getUserIdByEmailAddress : | head 1"
-		response1 = TBBStatusChecker.request search_param
-		flags << ParseResponse.parse(response1)
-	end
-
-	threads << Thread.new do
-    search_param = "search Exception during RESTful coachLookup: | head 1"
-		response1 = TBBStatusChecker.request search_param
-		flags << ParseResponse.parse(response1)
-	end
-
-	threads << Thread.new do
-    search_param = "search Exception during getting custType | head 1"
-		response1 = TBBStatusChecker.request search_param
-		flags << ParseResponse.parse(response1)
-	end
-
-	threads << Thread.new do
-    search_param = "search TBB ByDesign user creation failed for user.  NetOps contact ByDesign immediately. | head 1"
-		response1 = TBBStatusChecker.request search_param
-		flags << ParseResponse.parse(response1)
-	end
-
-	threads << Thread.new do
-    search_param = "search host='pinf-ftp1' Beachbody_OptinList_*.txt | head 1"
-		response1 = TBBStatusChecker.request search_param
-		flags << ParseResponse.parse(response1)
-	end
-
-	#Splunk Apis - File Processing
-
-	threads << Thread.new do
-    search_param = "search index=soa as_cc*.asc | head 1"
-		response1 = TBBStatusChecker.request search_param
-		flags << ParseResponse.parse(response1)
-	end
-
-	threads << Thread.new do
-    search_param = "search index=soa IS*.csv* | head 1"
-		response1 = TBBStatusChecker.request search_param
-		flags << ParseResponse.parse(response1)
+	CONFIG['bydesign_splunk'].each do |query|
+		threads << Thread.new do
+			response1 = TBBStatusChecker.request query
+			flags << ParseResponse.parse(response1)
+		end
 	end
 
 	threads.map(&:join)

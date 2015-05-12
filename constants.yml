@@ -58,49 +58,54 @@ by_design_services_2: ["DNS IP Match", "Ping", "SSL Certificate"]
 #Digital
 # Digital OHS (Digital OHS)
 digital_services: ["Ping"]
-digital_ohs_host_1: 'digiohs01.prd.dc2.beachbody.com'
-digital_ohs_host_2: 'digiohs01.prd.el.beachbody.com'
-digital_ohs_host_3: 'digiohs02.prd.dc2.beachbody.com'
-digital_ohs_host_4: 'digiohs02.prd.el.beachbody.com'
+digital_hosts:
+  - 'digiohs01.prd.dc2.beachbody.com'
+  - 'digiohs01.prd.el.beachbody.com'
+  - 'digiohs02.prd.dc2.beachbody.com'
+  - 'digiohs02.prd.el.beachbody.com'
+  - 'digiapp01.prd.dc2.beachbody.com'
+  - 'digiapp01.prd.el.beachbody.com'
+  - 'digiapp02.prd.dc2.beachbody.com'
+  - 'digiapp02.prd.el.beachbody.com'
+  - 'digiapp03.prd.dc2.beachbody.com'
+  - 'digiapp03.prd.el.beachbody.com'
+  - 'digiwpauth01.prd.dc2.beachbody.com'
+  - 'digiwpauth01.prd.el.beachbody.com'
+  - 'digiwppub01.prd.dc2.beachbody.com'
+  - 'digiwppub01.prd.el.beachbody.com'
+  - 'digiwppub02.prd.dc2.beachbody.com'
+  - 'digiwppub02.prd.el.beachbody.com'
+  - 'digiwppub03.prd.dc2.beachbody.com'
+  - 'digiwppub03.prd.el.beachbody.com'
+  - 'digimys01.prd.dc2.beachbody.com'
+  - 'digimys01.prd.el.beachbody.com'
+  - 'digimys02.prd.dc2.beachbody.com'
+  - 'digimys02.prd.el.beachbody.com'
+  - 'digimys03.prd.dc2.beachbody.com'
+  - 'digimys03.prd.el.beachbody.com'
+  - 'digicon01.prd.dc2.beachbody.com'
+  - 'digicon01.prd.el.beachbody.com'
+  - 'digicon02.prd.dc2.beachbody.com'
+  - 'digicon02.prd.el.beachbody.com'
+  - 'digicon03.prd.el.beachbody.com'
+  - 'digimon01.prd.dc2.beachbody.com'
+  - 'digimon01.prd.el.beachbody.com'
+  - 'digimon02.prd.dc2.beachbody.com'
+  - 'digimon02.prd.el.beachbody.com'
+  - 'digiadmin01.prd.el.beachbody.com'
 
-# Digital App (Digital App)
-digital_app_host_1: 'digiapp01.prd.dc2.beachbody.com'
-digital_app_host_2: 'digiapp01.prd.el.beachbody.com'
-digital_app_host_3: 'digiapp02.prd.dc2.beachbody.com'
-digital_app_host_4: 'digiapp02.prd.el.beachbody.com'
-digital_app_host_5: 'digiapp03.prd.dc2.beachbody.com'
-digital_app_host_6: 'digiapp03.prd.el.beachbody.com'
+digital_splunk:
+  - 'search index=tbb sourcetype=tbb_server does not match any name from EnrollmentUtil.ClubTrialTypeEnum | head 1'
+  - 'search index=tbb sourcetype=tbb_server Could not get the productSkuPriceMetaSignupTypeList with id | head 1'
+  - 'search index=tbb sourcetype=tbb_server Could not get the skuMeta with id | head 1'
 
-# Digital WordPress (Digital WordPress)
-digital_wp_host_1: 'digiwpauth01.prd.dc2.beachbody.com'
-digital_wp_host_2: 'digiwpauth01.prd.el.beachbody.com'
-digital_wp_host_3: 'digiwppub01.prd.dc2.beachbody.com'
-digital_wp_host_4: 'digiwppub01.prd.el.beachbody.com'
-digital_wp_host_5: 'digiwppub02.prd.dc2.beachbody.com'
-digital_wp_host_6: 'digiwppub02.prd.el.beachbody.com'
-digital_wp_host_7: 'digiwppub03.prd.dc2.beachbody.com'
-digital_wp_host_8: 'digiwppub03.prd.el.beachbody.com'
-
-#Digital MySQL (Digital MySQL)
-digital_mysql_host_1: 'digimys01.prd.dc2.beachbody.com'
-digital_mysql_host_2: 'digimys01.prd.el.beachbody.com'
-digital_mysql_host_3: 'digimys02.prd.dc2.beachbody.com'
-digital_mysql_host_4: 'digimys02.prd.el.beachbody.com'
-digital_mysql_host_5: 'digimys03.prd.dc2.beachbody.com'
-digital_mysql_host_6: 'digimys03.prd.el.beachbody.com'
-
-# Digital Content (Digital Content)
-digital_content_host_1: 'digicon01.prd.dc2.beachbody.com'
-digital_content_host_2: 'digicon01.prd.el.beachbody.com'
-digital_content_host_3: 'digicon02.prd.dc2.beachbody.com'
-digital_content_host_4: 'digicon02.prd.el.beachbody.com'
-digital_content_host_5: 'digicon03.prd.el.beachbody.com'
-
-# Digital MongoDB (Digital MongoDB)
-digital_mongodb_host_1: 'digimon01.prd.dc2.beachbody.com'
-digital_mongodb_host_2: 'digimon01.prd.el.beachbody.com'
-digital_mongodb_host_3: 'digimon02.prd.dc2.beachbody.com'
-digital_mongodb_host_4: 'digimon02.prd.el.beachbody.com'
-
-# Digital Admin (Digital Admin)
-digital_admin_host_1: 'digiadmin01.prd.el.beachbody.com'
+bydesign_splunk:
+  - "search index=tbb sourcetype=tbb_http soap:Fault | head 1"
+  - "search index=tbb sourcetype=tbb_http 'SqlClient' | head 1"
+  - "search Error in getUserIdByEmailAddress : | head 1"
+  - "search Exception during RESTful coachLookup: | head 1"
+  - "search Exception during getting custType | head 1"
+  - "search TBB ByDesign user creation failed for user.  NetOps contact ByDesign immediately. | head 1"
+  - "search host='pinf-ftp1' Beachbody_OptinList_*.txt | head 1"
+  - "search index=soa as_cc*.asc | head 1"
+  - "search index=soa IS*.csv* | head 1"
