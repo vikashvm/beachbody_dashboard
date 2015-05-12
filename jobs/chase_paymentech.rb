@@ -1,19 +1,19 @@
 require_relative '../lib/nagios_status_checker'
 require_relative '../lib/rule_binding'
-require_relative '../lib/constants.rb'
 
-SCHEDULER.every '600s', :first_in => '0s' do
+SCHEDULER.every CONFIG['interval'], :first_in => CONFIG['start_time'] do
 
 	chasepaymentechFlag = "green"
+	threads = []
 
 	# Chase Paymentech splunk data
-	t1 = Thread.new do
+	threads << Thread.new do
     search_param = "search index=soa as_cc*_resp.xml | head 1"
 		response1 = TBBStatusChecker.request search_param
 		@service_flag_1 = ParseResponse.parse(response1)
 	end
 
-	t1.join
+	threads.map(&:join)
 
 	chasepaymentechFlag = RuleBinding.set_flag(@service_flag_1)
 

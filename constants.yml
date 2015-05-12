@@ -1,3 +1,6 @@
+#SHECDULAR Interval
+interval: '600s'
+start_time: '0s'
 
 #NAGIOS Configuration
 nagios_base_url: "http://172.28.5.43/nagiosxi/backend/?cmd=getservicestatus&username=ayadav&ticket=piffeg4hvgefhr4impgr8sc6vjkd3iop476fma0jne3894pss7o23462kndk95ca"
