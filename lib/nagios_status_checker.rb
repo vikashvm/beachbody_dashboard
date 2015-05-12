@@ -5,7 +5,8 @@ require_relative './constants.rb'
 module NagiosStatusChecker
   
   def self.get_services(host_name)
-    url = CONFIG["nagios_base_url"] + '&host_name=' + host_name    
+    base_url = "http://" + SETTINGS["nagios_host"] + "/nagiosxi/backend/?cmd=getservicestatus&username=" + SETTINGS["nagios_username"] + "&ticket=" + SETTINGS["nagios_password"]
+    url = base_url + '&host_name=' + host_name    
     content = Nokogiri::XML(open(url, :read_timeout => 20))
     services = content.xpath("servicestatuslist/servicestatus")
     services
@@ -21,17 +22,10 @@ module NagiosStatusChecker
     return "green"
   end
 
-  def self.get_memory_services(server)
-    url = CONFIG["nagios_base_url"] + '&host_name=' + server
-    content = Nokogiri::XML(open(url, :read_timeout => 20))
-    services = content.xpath("servicestatuslist/servicestatus")
-    services
-  end
-
   def self.get_memory_status(host_list)
    tbbClusterCPU, tbbClusterMemory, tbbClusterSWAP, tbbClusterDisk = 0, 0, 0, 0
    host_list.each do |server|
-      memory_services = get_memory_services(server)
+      memory_services = get_services(server)
       memory_services.each do |mem_serv|
         service_mame = mem_serv.at_xpath("name").text
         current_state = mem_serv.at_xpath("current_state").text

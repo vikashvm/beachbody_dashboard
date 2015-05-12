@@ -3,3 +3,7 @@ url: 'https://xxx.xx.xxx.xxx:xxxx'
 username: 'user'
 password: 'password'
 splunk_api_url: '/a/b/c/jobs/export'
+
+nagios_host: '0.0.0.0'
+nagios_username: 'user'
+nagios_password: 'password'
