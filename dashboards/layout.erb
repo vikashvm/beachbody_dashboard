@@ -18,9 +18,131 @@
 </head>
   <body>
     <div id="container">
+      <div id="wrap">
+    <div id="lSide">
+      <div class="logoBox">
+        <a href="#" title="Team Beachbody">Team Beachbody</a>
+      </div>
+      <div class="welcome">
+        <img src="/assets/thumb-pic.gif" alt=""/> <br>
+        Hi Admin!
+      </div>
+      <div id="accordian">
+        <ul>
+          <li>
+            <h3><span class="fa fa-home"></span>Dashboard</h3>
+            <ul>
+              <li><a href="#">&#8250; Reports</a></li>
+              <li><a href="#">&#8250; Search</a></li>
+              <li><a href="#">&#8250; Graphs</a></li>
+              <li><a href="#">&#8250; Settings</a></li>
+            </ul>
+          </li>
+          <!-- we will keep this LI open by default -->
+          <li class="active">
+            <h3><span class="fa fa-tasks "></span>All</h3>
+            <ul>
+              <li><a href="#">&#8250; Apps</a></li>
+              <li><a href="#">&#8250; Services</a></li>
+              <li><a href="#">&#8250; Servers</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3><span class="fa fa-globe"></span>Apps</h3>
+            <ul>
+              <li><a href="#">&#8250; Team Beachbody</a></li>
+              <li><a href="#">&#8250; Shakeology</a></li>
+              <li><a href="#">&#8250; Wordpress</a></li>
+              <li><a href="#">&#8250; Forums</a></li>
+              <li><a href="#">&#8250; Digital</a></li>
+              <li><a href="#">&#8250; Market Live</a></li>
+              <li><a href="#">&#8250; ByDesign</a></li>
+              <li><a href="#">&#8250; iCentris</a></li>
+              <li><a href="#">&#8250; Oracle EBS</a></li>
+              <li><a href="#">&#8250; Chase Paymentech</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3><span class="fa fa-wrench"></span>Services</h3>
+            <ul>
+              <li><a href="#">&#8250; Nagios</a></li>
+              <li><a href="#">&#8250; Splunk</a></li>
+            </ul>
+          </li>
+              <li>
+            <h3><span class="fa fa-globe"></span>Servers</h3>
+            <ul>
+              <li><a href="#">&#8250; Critical Servers</a></li>
+              <li><a href="#">&#8250; Unhealthy Servers</a></li>
+              <li><a href="#">&#8250; Healthy Servers</a></li>
+              <li><a href="#">&#8250; Active Servers</a></li>
+              <li><a href="#">&#8250; Inactive Servers</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--RHS-->
+    <div id="rSide">
+      <div id="header">
+        <div id="top">
+          <div class="tLside">
+          <!--Col One Start-->
+            <div class="colOne">
+            <!--Col Search Start-->
+              <div class="container">
+                <form id="search" action="#" method="post">
+                  <div id="label"><label for="search-terms" id="search-label">search</label></div>
+                  <div id="input"><input type="text" name="search-terms" id="search-terms" placeholder="Enter search terms..."></div>
+                </form>
+
+              </div>
+            <!--Col Search ends-->
+              <span class="blBg">32</span> &nbsp; <span class="blgreen">05</span> &nbsp; <span class="blorng">15</span>
+            </div>
+          <!--Col One ends-->
+
+          </div>
+          <!--Col second Start-->
+          <div class="tMside">
+            <span class="fa fa-th-large fa fa-2x" ></span> &nbsp; <span class="fa fa-th-list fa fa-2x"></span>
+          </div>
+          <!--Col second ends-->
+          <!--Col third Start-->
+          <div class="tRside">
+            <div id="accordian">
+              <ul>
+                <li>
+                  <h3>Service Type <span class="fa fa-caret-down"></span></h3>
+                  <ul>
+                    <li><a href="#">Infrastructure</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Direct RI</a></li>
+                    <li><a href="#">Indirect RI</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <ol>
+              <li class="mydet"><img src="/assets/thumb-pic.gif"  alt=""/><a href="mailto:username@domain.com">username@xebia.com</a></li>
+              <li><a href="#" class="fa fa-cog fa fa-2x" title="setting">&nbsp;</a> </li>
+              <li><a href="#" class="fa fa-sign-out fa fa-2x" title="signout"> &nbsp;</a></li>
+            </ol>
+          </div>
+        <!--Col third ends-->
+        </div>
+        <div class="decpBox">
+          <a href="#top"></a>
+          <h1>Dashboard</h1>
+          <p>Status of applications and services for Nagios and Splunk.<br><br></p>
+        </div>
+      </div>
       <%= yield %>
     </div>
-  
+    <div class="clear"></div>
+  </div>
+
+
     <% if development? %>
       <div id="saving-instructions">
         <p>Paste the following at the top of <i><%= params[:dashboard] %>.erb</i></p>

@@ -1,15 +1,27 @@
-<h1 class="title" data-bind="title"></h1>
-
-<div data-showif="flag | equals 'green'">
-  	<i class="icon-arrow-up icon-background" style="color:#96bf48;"></i>
+<div class="boxf" style="position: relative">
+  <h4 data-showif="flag | equals 'green'" class="existing-header"><span class="fa fa-arrows"></span>Status: <span class="txtActive">Active</span> </h4>
+	<h4 data-showif="flag | equals 'red'" class="existing-header"><span class="fa fa-arrows"></span>Status: <span class="textDown">Down</span></h4>
+	<h4 data-showif="flag | equals 'yellow'" class="existing-header"><span class="fa fa-arrows"></span>Status: <span class="txtprogress">In Process</span> </h4>
+  <h4 class="default-header"><span class="fa fa-arrows"></span>Status: <span class="txtprogress">No Status</span> </h4>
+	<div class="boxMid" style="padding-top: 40px">
+		<p align="center">
+			<img data-showif="flag | equals 'green'" src="/assets/running.png" alt=""/>
+      <img data-showif="flag | equals 'red'" src="/assets/down.png" alt=""/>
+      <img data-showif="flag | equals 'yellow'" src="/assets/in-process.png" alt=""/><br>
+		  <span class="txtBlkCap title" data-bind="title"></span><br>
+		  <span class="txtBl updated-at" data-bind="updatedAtMessage"></span><br>
+		</p>
+	</div>
+	<div data-showif="flag | equals 'green'" class="boxFooter existing-footer">
+    <span class="fa fa-refresh fa fa-spin"></span> <img src="/assets/btnGrn.gif"alt=""/> Your App is running Great!
+  </div>
+  <div data-showif="flag | equals 'red'" class="boxFooter existing-footer">
+    <span class="fa fa-refresh fa fa-spin"></span> <img src="/assets/btnREd.gif"alt=""/> Error
+  </div>
+  <div data-showif="flag | equals 'yellow'" class="boxFooter existing-footer">
+    <span class="fa fa-refresh fa fa-spin"></span> <img src="/assets/btnYel.gif"alt=""/> Warning
+  </div>
+  <div class="boxFooter default-footer">
+    <span class="fa fa-refresh fa fa-spin"></span> <img src="/assets/btnYel.gif"alt=""/> Api is not responding
+  </div>
 </div>
-
-<div data-showif="flag | equals 'red'">
-	<i class="icon-arrow-down icon-background" style="color:#ec663c;"></i>
-</div>
-
-<div data-showif="flag | equals 'yellow'">
- <i class="icon-warning-sign icon-background" style="color:#FFCC00;"></i>
-</div>
-
-<p class="updated-at" data-bind="updatedAtMessage"></p>

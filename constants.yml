@@ -1,5 +1,5 @@
 #SHECDULAR Interval
-interval: '600s'
+interval: '60s'
 start_time: '0s'
 
 #NAGIOS Configuration

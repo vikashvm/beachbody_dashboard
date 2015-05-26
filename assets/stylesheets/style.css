@@ -1,0 +1,565 @@
+@charset "utf-8";
+/* CSS Document */
+/*CSS file for fontawesome - an iconfont we will be using. This CSS file imported contains the font-face declaration. More info: http://fortawesome.github.io/Font-Awesome/ */
+
+
+/*Basic reset*/
+* {margin: 0; padding: 0;}
+
+body {
+	background: #d9e4eb;
+	font:12px/16px Tahoma, arial, verdana;
+	color:#656565
+}
+.clear{
+	clear:both;
+}
+img{
+	border:0;
+}
+
+[data-col="2"] {
+	left: 220px !important;
+}
+
+[data-col="3"] {
+	left: 435px !important;
+}
+
+[data-col="4"] {
+	left: 650px !important;
+}
+
+[data-sizey="1"]{
+	height: 208px !important;
+}
+
+[data-sizex="2"]{
+	width: 425px !important;
+}
+
+[data-sizex="1"]{
+	width: 209px !important;
+}
+
+[data-row="2"] {
+	top: 215px !important;
+}
+
+[data-row="3"] {
+	top: 425px !important;
+}
+
+.existing-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 98%;
+}
+
+.default-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 98%;
+}
+
+.existing-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	width: 95%;
+}
+
+.default-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 95%;
+}
+
+.fa-cog, .fa-sign-out {
+	display:block;
+	width:35px;
+	margin-top:4px;
+	text-align:center
+}
+h1{
+	margin:0;
+	padding:0;
+}
+h1{
+	font:bold 16px/26px Arial;
+	color:#2a2a2a;
+}
+#wrap{
+	background:url(bodyBg.png) repeat-y 0 0;
+	margin:0 auto;
+	padding:0;
+	width:1024px;
+	height:auto;
+}
+#lSide, .logoBox, .welcome, #accordian, #rSide, #header, .row, .colOne, .tLside, .tMside,.tRside, .decpBox, .box, .boxf, .boxFooter, .timeBox{
+	float:left;
+}
+.logoBox, #footer, #header, .welcome, .row{
+	width:100%;
+}
+#top, .decpBox{
+
+	border-bottom:1px solid #c8d2ff;
+	width:856px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#top{
+	background-color:#fff;
+	padding-top:14px;
+	min-height:40px;
+	max-height:auto;
+	height:auto;
+}
+.decpBox{
+	background:url(discBg.png) repeat-y 0 0;
+}
+
+#footer{
+	position: relative;
+	bottom:0;
+	background:#333;
+	padding:3px 0;
+	color:#d6d4d6;
+	line-height:33px
+}
+
+#footer img{
+	position:absolute;
+	right:20px;
+	bottom:10px;
+}
+
+.tLside{
+	width:362px;
+	height:40px;
+}
+.tMside{
+	width:80px;
+	height:40px;
+}
+.tRside{
+	width:410px;
+	height:40px;
+}
+.tRside div#accordian {
+
+	padding-top:0;
+	float:left;
+	margin-right:5px;
+	width: 110px;
+	color: #001e2f;
+	text-transform:none;
+}
+/*heading styles*/
+.tRside div#accordian h3 {
+	background:#fff;
+	border:1px solid #aebfc7;
+	border-radius:2px;
+	font-weight:normal;
+	font-size:12px;
+	color:#aebfc7;
+	line-height:27px;
+	padding: 0 ;
+	text-indent:4px;
+	cursor: pointer;
+}
+/*heading hover effect*/
+.tRside div#accordian h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.0);
+}
+
+/*list items*/
+.tRside div#accordian li {
+	list-style-type: none;
+}
+/*links*/
+.tRside div#accordian ul ul li a {
+	color: #aebfc7;
+	text-decoration: none;
+	font-size: 11px;
+	line-height:22px;
+	height:22px;
+	display: block;
+	padding: 0 15px;
+	/*transition for smooth hover animation*/
+	transition: all 0.15s;
+	background-color:#fff
+}
+/*hover effect on links*/
+.tRside div#accordian ul ul li a:hover {
+	border-bottom: 0;
+	color:#fff;
+	background:#aebfc7
+
+}
+/*Lets hide the non active LIs by default*/
+.tRside div#accordian ul ul {
+	position:relative;
+	z-index:9999;
+	display:none;
+	margin-top:3px
+}
+
+
+.tRside ol, .tRside ul {
+	margin:0;
+	padding:0;
+}
+.tRside ol li{
+	float:left;
+	width:32px;
+	line-height:32px;
+	margin-right:2px;
+	display:inline;
+}
+.tRside ol li a{
+	text-decoration:none;
+	color:#aebfc7;
+}
+
+
+.tRside ol li.mydet img{
+	float:left;
+	margin-right:3px;
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	border:1px solid #aebfc7;
+}
+.tRside ol li.mydet {
+	width:203px;
+	line-height:33px
+}
+.tRside ol li.mydet a{
+	text-decoration:none;
+	color:#00adef;
+	font-weight:bold;
+}
+
+
+
+
+.mrginTB{
+	margin-top:2px;
+	margin-bottom:2px
+}
+
+.colTwo
+{
+	width:}
+.colOne{
+	background:url(sml-icons.gif) no-repeat 30px 50%;
+	height:25px;
+	width:292px;
+
+}
+.colOne span{
+	width:37px;
+	height:37px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	font-size:12px;
+	color:#fff;
+	padding:2px
+}
+.colOne span.blBg{
+	margin-left:20px;
+	background:#003789;
+}
+
+.colOne span.blgreen{
+	margin-left:20px;
+	background:#36da83;
+}
+.colOne span.blorng{
+	margin-left:10px;
+	background:#ff830e;
+}
+#rSide{
+	background:url(beachbodyBg.png) no-repeat 50% 100%;
+	border-top:5px solid #006fb7;
+	width:866px;
+	padding:0 ;
+	height:auto;
+}
+/*search Box Starts*/
+.container {
+	width: 200px;
+	margin: 0 ;
+	padding: 0;
+
+
+}
+
+#search {
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-left: 0px;
+}
+#label {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 20;
+}
+#label label {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background:url(search.png) 0 0;
+    font-size: 0;
+    color: rgba(0, 0, 0, 0);
+    text-indent: -9999px;
+    cursor: pointer;
+}
+#label label:hover {
+    background: url(search.png) -25px 0
+
+}
+#label.active label {
+    background: url(search.png) -25px 0
+
+}
+#input {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 250px;
+    height: 25px;
+    z-index: 5;
+    overflow: hidden;
+}
+#input input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+	border:0;
+    background-color:#aebfc7;
+    font-size: 12px;
+	color: #fff;
+    -webkit-backface-visibility: none;
+    -moz-backface-visibility: none;
+    -ms-backface-visibility: none;
+    backface-visibility: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: left 0;
+    -moz-transition: left 0;
+    -ms-transition: left 0;
+    -o-transition: left 0;
+    transition: left 0;
+	}
+#input input:focus {
+    outline: none;
+
+}
+#input.focus {
+    z-index: 20;
+
+}
+#input.focus input {
+    left: 0;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+	text-indent:5px;
+
+}
+
+/*Search Ends*/
+#lSide{
+	border-top:5px solid #003789;
+	background:#0376b8;
+	width:158px;
+	height:auto;
+}
+#lSide .logoBox{
+	text-align:center;
+	background:url(beachbody.gif) no-repeat 50% 0;
+	height:110px;
+	padding-bottom:10px;
+}
+.logoBox a{
+	display:block;
+	width:150px;
+	height:110px;
+	font-size:0px;
+	color:#0376b8;
+	text-decoration:none;
+
+}
+.welcome img{
+	margin:0 auto;
+	width:55px;
+	height:55px;
+	margin:2px 0;
+	border-radius:50%;
+}
+.welcome{
+	padding-top:8px;
+	background:#3d4357 url(left-devider.gif) no-repeat 0 100%;
+	padding-bottom:41px;
+	font-size:14px;
+	color:#fff;
+	text-align:center;
+
+}
+
+#accordian {
+	padding-top:30px;
+	width: 158px;
+	color: #001e2f;
+	text-transform:uppercase;
+
+}
+/*heading styles*/
+#accordian h3 {
+	line-height: 34px;
+	padding: 0 10px;
+	cursor: pointer;
+
+
+}
+/*heading hover effect*/
+#accordian h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#accordian h3 span {
+	font-size: 16px;
+	margin-right: 10px;
+}
+/*list items*/
+#accordian li {
+	list-style-type: none;
+}
+/*links*/
+#accordian ul ul li a {
+	color: #7ab4db;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 27px;
+	display: block;
+	padding: 0 15px;
+	transition: all 0.15s;
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+	background: #41465a;
+	border-bottom: 2px solid #003789;
+}
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+	display: none;
+}
+#accordian li.active ul {
+	display: block;
+}
+.timeBox{
+	width:424px;
+	height:160px;
+	padding-top:42px;
+	border:1px solid #eab206;
+	background: url(timeBoxBg.png) repeat-x 0 0;
+	margin:2px;
+	text-align:center;
+	font:bold 45px/ 47px 'Titillium Web', sans-serif;
+	color:#fff;
+}
+.timeBox span{
+	font-weight:normal;
+	color:#171818;
+	font-size:35px;
+}
+.box, .boxf{
+	width:209px;
+	height:202px;
+	border:1px solid #2a2a2a
+
+}
+.box{
+margin:2px;
+}
+.boxf{
+	margin:2px 2px 2px 4px;
+}
+
+.box h4, .boxf h4{
+	background:#141721;
+	padding:6px 3px ;
+	height:19px;
+	font:bold 16px/24px arial;
+	color:#fff;
+}
+.fa-arrows{
+	float:right;
+	color:#dcdfe0;
+}
+.txtActive{
+	color:#13ee7a;
+}
+.txtprogress{
+	color:#fdc516;
+}
+.textDown{
+	color:#ff526a;
+}
+.boxMid{
+	background: url(transBg.png) repeat-x 0 0;
+	text-align:center;
+	height:120px;
+	padding-top:9px;
+	font-size:11px;
+	color:#030709;
+
+}
+.txtBl{
+	color:#0faeec;
+	font-size:13px;
+
+}
+.txtBlkCap{
+	font-weight:bold;
+	line-height:26px;
+	color:#030709;
+	font-size:14px;
+	text-transform:uppercase;
+}
+.boxFooter{
+	font-size:11px;
+	width:199px;
+	background:#d7d9da;
+	padding:11px 5px 3px 5px;
+	height:28px;
+	color:#000;
+	text-align:right
+}
+
+.fa-refresh{
+	color:#b3b4b5;
+	margin-top:3px;
+	float:left;
+
+}

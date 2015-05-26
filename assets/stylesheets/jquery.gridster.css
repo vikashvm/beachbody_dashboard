@@ -51,6 +51,11 @@
     transition: all 0s !important;
 }
 
+.ready {
+  width: 100% !important;
+}
+
+
 /* Uncomment this if you set helper : "clone" in draggable options */
 /*.gridster .player {
   opacity:0;
