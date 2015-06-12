@@ -101,12 +101,12 @@ digital_splunk:
   - 'search index=tbb sourcetype=tbb_server Could not get the skuMeta with id | head 1'
 
 bydesign_splunk:
-  - "search index=tbb sourcetype=tbb_http soap:Fault | head 1"
-  - "search index=tbb sourcetype=tbb_http 'SqlClient' | head 1"
+  # - "search index=tbb sourcetype=tbb_http soap:Fault | head 1"
+  # - "search index=tbb sourcetype=tbb_http 'SqlClient' | head 1"
   - "search Error in getUserIdByEmailAddress : | head 1"
   - "search Exception during RESTful coachLookup: | head 1"
   - "search Exception during getting custType | head 1"
   - "search TBB ByDesign user creation failed for user.  NetOps contact ByDesign immediately. | head 1"
   - "search host='pinf-ftp1' Beachbody_OptinList_*.txt | head 1"
-  - "search index=soa as_cc*.asc | head 1"
-  - "search index=soa IS*.csv* | head 1"
+  # - "search index=soa as_cc*.asc | head 1"
+  # - "search index=soa IS*.csv* | head 1"
